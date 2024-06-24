@@ -1,0 +1,21 @@
+﻿<Window x:Class="SignInAndSignUpForm.RegistrationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Registration" Height="350" Width="525">
+    <Grid>
+        <Label Content="Email:" HorizontalAlignment="Left" Margin="62,72,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="RegUsernameTextBox" HorizontalAlignment="Left" Margin="142,72,0,0" VerticalAlignment="Top" Width="200"/>
+        <Label Content="Password:" HorizontalAlignment="Left" Margin="62,122,0,0" VerticalAlignment="Top"/>
+        <PasswordBox x:Name="RegPasswordBox" HorizontalAlignment="Left" Margin="142,122,0,0" VerticalAlignment="Top" Width="200"/>
+        <Label Content="Confirm Password:" HorizontalAlignment="Left" Margin="20,172,0,0" VerticalAlignment="Top"/>
+        <PasswordBox x:Name="RegConfirmPasswordBox" HorizontalAlignment="Left" Margin="142,172,0,0" VerticalAlignment="Top" Width="200"/>
+
+        <TextBlock HorizontalAlignment="Left" Margin="140,228,0,0" VerticalAlignment="Top">
+            <Run Text="Already have an account? "/>
+            <Hyperlink NavigateUri="#" RequestNavigate="Hyperlink_RequestNavigate">
+                <Run Text="Login Here"/>
+            </Hyperlink>
+        </TextBlock>
+        <Button Content="Register" HorizontalAlignment="Left" Margin="142,259,0,0" VerticalAlignment="Top" Width="200" Click="RegisterButton_Click"/>
+    </Grid>
+</Window>
