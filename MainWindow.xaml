@@ -1,9 +1,10 @@
-﻿<Window x:Class="SignInAndSignUpForm.MainWindow"
+<Window x:Class="SignInAndSignUpForm.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Login" Height="350" Width="525">
     <Grid>
         <Label Content="Email:" HorizontalAlignment="Left" Margin="60,78,0,0" VerticalAlignment="Top"/>
+        <Label Content="Secret key: Echo Romeo" HorizontalAlignment="Left" Margin="60,48,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="UsernameTextBox" HorizontalAlignment="Left" Margin="140,78,0,0" VerticalAlignment="Top" Width="200"/>
         <Label Content="Password:" HorizontalAlignment="Left" Margin="60,128,0,0" VerticalAlignment="Top"/>
         <PasswordBox x:Name="PasswordBox" HorizontalAlignment="Left" Margin="140,128,0,0" VerticalAlignment="Top" Width="200"/>
